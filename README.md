@@ -1,4 +1,4 @@
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![React Astronaut](https://github.com/TuneLord/React_Astronaut/blob/gh-pages/ReactAstronaut.PNG)
 
 # React Astronaut
 An educational website dedicated to React and related technologies. The site is currently in Polish and contains simple translations of issues. Built using the create-react-app.

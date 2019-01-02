@@ -1,0 +1,106 @@
+@import "../modules/colors";
+@import "../modules/animations";
+@import "../modules/fonts";
+@import "../modules/variables";
+
+figure {
+  @include animation(scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both);
+  .logo {
+    @include animation(rotate-center 120s linear infinite both);
+    max-width: 70vw;
+    max-height: 70vw;
+    margin-top: 15vh;
+    @include screen('desktop1280'){
+      max-width: 30vw;
+    }
+    @include screen('desktop1366'){
+      max-width: 27vw;
+    }
+  }
+}
+
+.logo-article {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  h1 {
+    @include animation (scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both);
+    font-size: 9vh;
+    color: $layoutSecondaryColor;
+    font-family: $mainFont;
+    margin-top: 2rem;
+    z-index: 1;
+    text-shadow: 0 0.625rem $layoutTertiaryColor;
+    @include screen('mobile360') {
+      margin-top: 3.5rem;
+    }
+    @include screen('tablet1024') {
+      margin-top: 6rem;
+    }
+    @include screen('desktop1280') {
+      margin-top: 4rem;
+    }
+  }
+
+  h2 {
+    @include animation(scale-up-center 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both);
+    font-size: 4vh;
+    color: $layoutPrimaryColor;
+    font-family: $mainFont;
+    margin-top: -0.625rem;
+    z-index: 1;
+  }
+
+  button {
+    @include animation(scale-up-center 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both);
+    border-radius: 50%;
+    border: 0;
+    margin-top: 0.9rem;
+    background-color: $layoutPrimaryColor;
+    width: 100vw;
+    height: 100vh;
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+    color: $layoutSecondaryColor;
+    border: none;
+    cursor: pointer;
+    @include screen('mobile360') {
+      margin-top: 3rem;
+    }
+    @include screen('mobile480') {
+      margin-top: 1.5rem;
+    }
+    @include screen('tablet768') {
+      max-width: 3.7rem;
+      max-height: 3.7rem;
+      margin-top: 2.5rem;
+    }
+    @include screen('tablet1024') {
+      max-width: 5rem;
+      max-height: 5rem;
+      margin-top: 3rem;
+    }
+    @include screen('desktop1280') {
+      max-width: 3rem;
+      max-height: 3rem;
+      margin-top: 2.5rem;
+    }
+    @include screen('desktop1366') {
+      max-width: 3rem;
+      max-height: 3rem;
+      margin-top: 2.5rem;
+    }
+
+    &:hover {
+      box-shadow: 0 0 6.25rem 0.625rem $layoutPrimaryColor;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

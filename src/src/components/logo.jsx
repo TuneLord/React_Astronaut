@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from '../images/reactLogoMain.svg';
+import logo from '../images/LogoMain.svg';
 import Tilt from 'react-tilt';
-import { goToAnchor } from 'react-scrollable-anchor'
+import {goToAnchor} from 'react-scrollable-anchor'
 
 class Logo extends React.Component {
     buttonClick = () => {
@@ -10,18 +10,20 @@ class Logo extends React.Component {
 
     render() {
         return (
-            <div className="logo-container">
+            <article className="logo-article">
                 <Tilt className="Tilt" options={{max: 25}}>
-                        <img src={logo} alt='React Logo' className="logo"/>
+                    <figure>
+                    <img src={logo} alt='React Logo' className="logo"/>
+                    </figure>
                 </Tilt>
-                <div className="logo-container">
-                    <h1 className={'logo-h1 scale-up-center'}>REACT</h1>
-                    <h2 className={'logo-h2 scale-up-center'}>ASTRONAUT</h2>
-                    <button className={'logo-button fadeIn'} onClick={this.buttonClick}>
-                        <i class="fas fa-chevron-down fa-2x" style={{marginTop: '4px'}}></i>
+                <div className="logo-article">
+                    <h1>REACT</h1>
+                    <h2>ASTRONAUT</h2>
+                    <button onClick={this.buttonClick}>
+                        <i class="fas fa-chevron-down fa-2x" style={{marginTop: '0.25rem'}}/>
                     </button>
                 </div>
-            </div>
+            </article>
         );
     }
 }

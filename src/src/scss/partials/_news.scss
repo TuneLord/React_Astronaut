@@ -1,0 +1,60 @@
+@import "../modules/colors";
+@import "../modules/variables";
+
+.news-article {
+  background-color: $layoutSecondaryColor;
+  display: inline-block;
+  text-align: center;
+  padding: 1.5em;
+  max-width: 9.375rem;
+  max-height: 12.5rem;
+  width: 100%;
+  height: 100%;
+  margin: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+  border: 1px solid $sectionPrimaryColor;
+  @include screen('desktop1280') {
+    margin-bottom: -2.5rem;
+  }
+  h4 {
+    color: $sectionPrimaryColor;
+    font-size: 0.875rem;
+    @include screen('tablet768'){
+      font-size: 1rem;
+    }
+  }
+  p {
+    margin-top: 0.625rem;
+    max-width: 13.75rem;
+    max-height: 18.75rem;
+    display: none;
+    color: $layoutSecondaryColor;
+  }
+  button {
+    border-radius: 0.3125rem;
+    background-color: $sectionPrimaryColor;
+    max-width: 9.375rem;
+    height: 1.7rem;
+    color: $layoutSecondaryColor;
+    font-size: 0.75rem;
+    width: 100%;
+    @include screen('tablet768') {
+      height: 2rem;
+      font-size: 0.9rem;
+    }
+
+    &:hover {
+      background-color: $layoutPrimaryColor;
+      color: $sectionPrimaryColor;
+      font-weight: 700;
+    }
+  }
+}
+
+.news-links {
+  color: $layoutSecondaryColor;
+  &:hover {
+    color: $layoutSecondaryColor;
+    text-decoration: none;
+  }
+}

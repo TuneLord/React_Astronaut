@@ -1,0 +1,51 @@
+@mixin animation($value...) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  animation: $value;
+}
+
+@mixin screen($size) {
+  $mobile360: "(min-width: 360px)";
+  $mobile480: "(min-width: 480px)";
+
+  $tablet768: "(min-width: 768px)";
+  $tablet1024: "(min-width: 1024px)";
+
+  $desktop1280: "(min-width: 1280px)";
+  $desktop1366: "(min-width: 1366px)";
+  $desktop1600: "(min-width: 1600px)";
+
+  @if $size == mobile360 {
+    @media only screen and #{$mobile360} {
+      @content;
+    }
+  } @else if $size == mobile480 {
+    @media only screen and #{$mobile480} {
+      @content;
+    }
+  } @else if $size == tablet768 {
+    @media only screen and #{$tablet768} {
+      @content;
+    }
+  } @else if $size == tablet1024 {
+    @media only screen and #{$tablet1024} {
+      @content;
+    }
+  } @else if $size == desktop1280 {
+    @media only screen and #{$desktop1280} {
+      @content;
+    }
+  } @else if $size == desktop1366 {
+    @media only screen and #{$desktop1366} {
+      @content;
+    }
+  } @else if $size == desktop1600 {
+    @media only screen and #{$desktop1600} {
+      @content;
+    }
+  } @else {
+    @media only screen and #{$size} {
+      @content;
+    }
+  }
+}

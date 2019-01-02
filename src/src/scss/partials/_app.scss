@@ -1,0 +1,95 @@
+@import "../modules/colors";
+@import "../modules/fonts";
+@import "../modules/variables";
+
+.entrance-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 28.125rem;
+  width: 100vw;
+  margin-bottom: 2.5rem;
+
+  h1 {
+    text-align: center;
+    color: $layoutSecondaryColor;
+    margin: 2.5rem 0;
+    font-size: 2rem;
+    font-family: $mainFont;
+    text-shadow: 0 0.0625rem 0.0625rem $layoutTertiaryColor;
+    @include screen('tablet768'){
+      font-size: 2.5rem;
+    }
+  }
+
+  article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.goodPractices-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: $layoutSecondaryColor;
+  color: $layoutTertiaryColor;
+  h1 {
+    text-align: center;
+    color: $layoutTertiaryColor;
+    margin: 2.5rem 0;
+    font-size: 2rem;
+    font-family: $mainFont;
+    text-shadow: 0 0.0625rem 0.0625rem $layoutTertiaryColor;
+    @include screen('tablet768'){
+      font-size: 2.5rem;
+    }
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 50px;
+  }
+}
+
+.documentation-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 7.5rem;
+  h1 {
+    text-align: center;
+    color: $layoutSecondaryColor;
+    margin: 2.5rem 0 1.875rem 0;
+    font-size: 2rem;
+    font-family: $mainFont;
+    text-shadow: 0 0.0625rem 0.0625rem $layoutTertiaryColor;
+    @include screen('tablet768'){
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  display: block;
+  overflow-x: hidden;
+  z-index: 0;
+  background: $backgroundPrimaryColor url("../images/stars.png") repeat fixed;
+}
+

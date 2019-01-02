@@ -20,17 +20,17 @@ class Documentation extends React.Component {
 
     render() {
         return (
-            <>
+            <article className="documentation-article">
                 <Zoom top>
                     <Tilt className="Tilt" options={{max: 2, scale: 1.05}}>
                         <ExpansionPanel className='documentation-expansionPanel'>
                             <ExpansionPanelSummary>
                                 <Typography><strong className="documentation-title">{this.state.title}</strong></Typography>
                             </ExpansionPanelSummary>
-                            <ExpansionPanelDetails>
+                            <ExpansionPanelDetails className="documentation-details">
                                 <Typography className="documentation-content">
-                                    {this.state.content}.
-                                    <SyntaxHighlighter language='javascript' style={atomDark} className="documentation-codeStyle">
+                                    <p>{this.state.content}.</p>
+                                    <SyntaxHighlighter language='javascript' style={atomDark} className="documentation-code">
                                         {this.state.code}
                                     </SyntaxHighlighter>
                                 </Typography>
@@ -38,7 +38,7 @@ class Documentation extends React.Component {
                         </ExpansionPanel>
                     </Tilt>
                 </Zoom>
-            </>
+            </article>
         )
     }
 }

@@ -1,14 +1,14 @@
 # React_Astronaut
 An educational website dedicated to React and related technologies. The site is currently in Polish and contains simple translations of issues. Built using the create-react-app.
 
-<strong><h2>Features</h2></strong>
+##Features
 * **Tilt (parallax)** logo and elements on page, 
 * **Hamburger** menu, 
 * **What's new?** - about new versions of popular technologies, 
 * **Good practices** - simple rules for React beginners, 
 * **Documentation** - new, very important React documentation with examples.
 
-<strong><h2>What's in the package?</h2></strong>
+##What's in the package?
 **Master branch (in src/src folder):**
 * **components** - all React .jsx components (look: features),
 * **css** - app.css - sass output file,
@@ -19,14 +19,14 @@ An educational website dedicated to React and related technologies. The site is 
 **Gh-pages branch:**
 * Generated build version of the page adapted to github pages (preview).
 
-<strong><h1>Technologies and frameworks</h1></strong>
+##Technologies and frameworks
 * HTML5, 
 * CSS3,
 * JS (ES6),
 * Sass (Scss),
 * React.
 
-<strong><h1>NPM Packages</h1></strong>
+##NPM Packages
 * babel,
 * material-ui,
 * gh-pages,
@@ -37,5 +37,5 @@ An educational website dedicated to React and related technologies. The site is 
 * react-burger-menu,
 * lodash and more.
 
-<strong><h1>Preview</h1></strong>
+##Preview
 [React Astronaut](https://tunelord.github.io/React_Astronaut/)

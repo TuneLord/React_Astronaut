@@ -10,7 +10,7 @@
 
 <strong><h1>What's in the package?</h1></strong>
 <h2>Master branch</h2>
-* **audio** - 8-bit game audio,
+* 8-bit game audio,
 * **css** - two stylesheets,
 * **fonts** - official megaman fonts,
 * **images** - all images and gifs. 

@@ -35,8 +35,7 @@ An educational website dedicated to React and related technologies. The site is 
 * reactstrap,
 * react-tilt,
 * react-burger-menu,
-* lodash,
-* and more.
+* lodash and more.
 
 <strong><h1>Preview</h1></strong>
 [React Astronaut](https://tunelord.github.io/React_Astronaut/)

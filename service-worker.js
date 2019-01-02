@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/React_Astronaut/precache-manifest.a28602079912db9ac37dc8ac6403fd19.js"
+  "/React_Astronaut/precache-manifest.3245878bcf804ce0574cfa72d41a5487.js"
 );
 
 workbox.clientsClaim();

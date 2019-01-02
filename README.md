@@ -1,4 +1,4 @@
-![React Astronaut](/sciezka/do/zdjecie.jpg "React Astronaut")
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
 
 # React Astronaut
 An educational website dedicated to React and related technologies. The site is currently in Polish and contains simple translations of issues. Built using the create-react-app.

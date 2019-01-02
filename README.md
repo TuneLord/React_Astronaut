@@ -1,15 +1,15 @@
 # React_Astronaut
 2D game titled "Megaman Furry". The gameplay consists in collecting as many megaman heads as possible on the map and avoid random generating enemies. If you collect 50 heads - boss Ice Man arrives.
 
-<strong><h1>Features</h1></strong>
+<strong><h2>Features</h2></strong>
 * **animated hero** megaman, 
 * **random generating** heads, enemies, boss position, 
 * **score**, 
 * realistic megaman **entrance**, 
 * simple rules of the game 
 
-<strong><h1>What's in the package?</h1></strong>
-<h2>Master branch</h2>
+<strong><h2>What's in the package?</h2></strong>
+**Master branch:**
 * 8-bit game audio,
 * **css** - two stylesheets,
 * **fonts** - official megaman fonts,

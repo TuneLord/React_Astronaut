@@ -1,12 +1,12 @@
 # React_Astronaut
-2D game titled "Megaman Furry". The gameplay consists in collecting as many megaman heads as possible on the map and avoid random generating enemies. If you collect 50 heads - boss Ice Man arrives.
+An educational website dedicated to React and related technologies. The site is currently in Polish and contains simple translations of issues.
 
 <strong><h2>Features</h2></strong>
-* **animated hero** megaman, 
-* **random generating** heads, enemies, boss position, 
-* **score**, 
-* realistic megaman **entrance**, 
-* simple rules of the game 
+* **Tilt (parallax) logo** and elements on page, 
+* **Hamburger menu**, 
+* **What's new?** - about new versions of popular technologies, 
+* **Good practices** - simple rules for React beginners, 
+* **Documentation** - new, very important React documentation with examples.
 
 <strong><h2>What's in the package?</h2></strong>
 **Master branch:**
@@ -16,8 +16,8 @@
 * **images** - all images and gifs. 
 * **js** - app.js -> clear original code, out.js -> webpack version.
 
-<h2>Gh-pages branch</h2>
-*
+**Gh-pages branch:**
+* dasdasd,
 
 <strong><h1>Technologies and frameworks</h1></strong>
 *

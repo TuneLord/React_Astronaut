@@ -1,4 +1,4 @@
-![React Astronaut](https://github.com/TuneLord/React_Astronaut/blob/gh-pages/static/reactlogo.png)
+![React Astronaut](https://github.com/TuneLord/React_Astronaut/blob/gh-pages/static/media/reactlogo.png)
 
 # React Astronaut
 An educational website dedicated to React and related technologies. The site is currently in Polish and contains simple translations of issues. Built using the create-react-app.

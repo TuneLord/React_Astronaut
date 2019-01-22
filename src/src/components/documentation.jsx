@@ -19,6 +19,7 @@ class Documentation extends React.Component {
     }
 
     render() {
+        const tempCode = this.state.code.replace(/_b/g,'\n');
         return (
             <article className="documentation-article">
                 <Zoom top>
@@ -30,9 +31,7 @@ class Documentation extends React.Component {
                             <ExpansionPanelDetails className="documentation-details">
                                 <Typography className="documentation-content">
                                     <p>{this.state.content}.</p>
-                                    <SyntaxHighlighter language='javascript' style={atomDark} className="documentation-code">
-                                        {this.state.code}
-                                    </SyntaxHighlighter>
+                                    <SyntaxHighlighter language='jsx' style={atomDark} className="documentation-code" wrapLines={true} children={tempCode} />
                                 </Typography>
                             </ExpansionPanelDetails>
                         </ExpansionPanel>

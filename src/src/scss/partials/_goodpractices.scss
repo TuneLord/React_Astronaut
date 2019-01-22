@@ -33,6 +33,7 @@
   .goodPractices-code {
     width: 100vw;
     margin-bottom: 3.75rem;
+    white-space: pre-wrap;
     @include screen('tablet768') {
       font-size: 1.1rem;
     }

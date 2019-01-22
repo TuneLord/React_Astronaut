@@ -32,7 +32,7 @@
 }
 .news-container article {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -113,7 +113,6 @@
 .documentation-article .documentation-expansionPanel {
   width: 85vw;
   margin: 0.625rem 0;
-  border-radius: 5rem;
   border: 0.0625rem solid #495057;
 }
 @media only screen and (min-width: 768px) {
@@ -213,6 +212,7 @@
 .goodPractices-article .goodPractices-code {
   width: 100vw;
   margin-bottom: 3.75rem;
+  white-space: pre-wrap;
 }
 @media only screen and (min-width: 768px) {
   .goodPractices-article .goodPractices-code {
@@ -521,12 +521,10 @@ figure .logo {
 }
 
 .bm-menu-wrap {
-  min-width: 50vw;
   max-width: 50vw;
 }
 @media only screen and (min-width: 1280px) {
   .bm-menu-wrap {
-    min-width: 25vw;
     max-width: 25vw;
   }
 }
@@ -646,30 +644,26 @@ figure .logo {
 
 .news-article {
   background-color: #F7F7F7;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   text-align: center;
-  padding: 1.5em;
+  padding: 1.5rem 3rem;
   max-width: 9.375rem;
   max-height: 12.5rem;
   width: 100%;
   height: 100%;
-  margin: 0.625rem 1.25rem;
+  margin: 0.625rem 1rem;
   border-radius: 0.3125rem;
   border: 1px solid #1D1F21;
 }
-@media only screen and (min-width: 1280px) {
-  .news-article {
-    margin-bottom: -2.5rem;
-  }
+.news-article img {
+  width: 4rem;
+  height: 4rem;
 }
 .news-article h4 {
   color: #1D1F21;
-  font-size: 0.875rem;
-}
-@media only screen and (min-width: 768px) {
-  .news-article h4 {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
+  margin-top: 0.625rem;
 }
 .news-article p {
   margin-top: 0.625rem;
@@ -677,26 +671,6 @@ figure .logo {
   max-height: 18.75rem;
   display: none;
   color: #F7F7F7;
-}
-.news-article button {
-  border-radius: 0.3125rem;
-  background-color: #1D1F21;
-  max-width: 9.375rem;
-  height: 1.7rem;
-  color: #F7F7F7;
-  font-size: 0.75rem;
-  width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .news-article button {
-    height: 2rem;
-    font-size: 0.9rem;
-  }
-}
-.news-article button:hover {
-  background-color: #00D8FF;
-  color: #1D1F21;
-  font-weight: 700;
 }
 
 .news-links {

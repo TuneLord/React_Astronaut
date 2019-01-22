@@ -27,22 +27,24 @@ class NewsContainer extends React.Component {
             <>
                 <Fade>
                     <Tilt className="Tilt" options={{max: 25}}>
-                        <article className="news-article">
-                            <i class={this.props.icons}/>
-                            <h4>{this.props.title}</h4>
-                            <p>{this.props.content}</p>
-                            <button onClick={this.toggle}>Czytaj więcej</button>
+                        <article className="news-article" onClick={this.toggle}>
+                            <div>
+                                <img src={this.props.icons} alt={this.state.title}/>
+                                <h4>{this.props.title}</h4>
+                                <p>{this.props.content}</p>
+                            </div>
                             <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                                 <ModalHeader toggle={this.toggle}>{this.state.title}</ModalHeader>
                                 <ModalBody>
-                                    <h3>Informacje</h3>
+                                    <h4>Informacje</h4>
                                     <p>{this.state.content}</p>
-                                    <h3>Poradniki i tutoriale</h3>
+                                    <h4>Poradniki i tutoriale</h4>
                                 </ModalBody>
                                 <ModalFooter>
                                     <Button color="primary" onClick={this.toggle}><a className="news-links"
                                                                                      href={this.state.webpage}
-                                                                                     target="_blank">Czytaj
+                                                                                     target="_blank"
+                                                                                     rel="noopener noreferrer">Czytaj
                                         więcej</a></Button>{' '}
                                     <Button color="secondary" onClick={this.toggle}>Wyjdź</Button>
                                 </ModalFooter>

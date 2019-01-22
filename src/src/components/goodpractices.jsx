@@ -15,17 +15,14 @@ class GoodPractices extends React.Component {
     }
 
     render() {
+        const tempCode = this.state.code.replace(/_b/g,'\n');
         return (
             <article className="goodPractices-article">
                 <Flip top>
-
                     <h2>{this.state.title}</h2>
                     <p>{this.state.content}</p>
-                    <Tilt className="Tilt" options={{max: 2, scale: 1}}>
-                        <SyntaxHighlighter language='javascript' style={atomDark}
-                                           className="goodPractices-code">
-                            {this.state.code}
-                        </SyntaxHighlighter>
+                    <Tilt className="Tilt" options={{max: 1, scale: 1}}>
+                        <SyntaxHighlighter language='jsx' style={atomDark} className="goodPractices-code" wrapLines={true} children={tempCode} />
                     </Tilt>
                 </Flip>
             </article>

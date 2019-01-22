@@ -43,10 +43,8 @@
 }
 
 .bm-menu-wrap {
-  min-width: 50vw;
   max-width: 50vw;
   @include screen('desktop1280') {
-    min-width: 25vw;
     max-width: 25vw;
   }
 

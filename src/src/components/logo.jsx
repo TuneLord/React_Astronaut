@@ -20,7 +20,7 @@ class Logo extends React.Component {
                     <h1>REACT</h1>
                     <h2>ASTRONAUT</h2>
                     <button onClick={this.buttonClick}>
-                        <i class="fas fa-chevron-down fa-2x" style={{marginTop: '0.25rem'}}/>
+                        <i className="fas fa-chevron-down fa-2x" style={{marginTop: '0.25rem'}}/>
                     </button>
                 </div>
             </article>

@@ -14,7 +14,6 @@
   .documentation-expansionPanel {
     width: 85vw;
     margin: 0.625rem 0;
-    border-radius: 5rem;
     border: 0.0625rem solid $layoutTertiaryColor;
     @include screen('tablet768') {
       padding: 0.625rem 0;

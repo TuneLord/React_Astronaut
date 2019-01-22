@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/React_Astronaut/static/js/runtime~main.75b33a18.js"
   },
   {
-    "revision": "a5aa10f6d377506d70b7",
-    "url": "/React_Astronaut/static/js/main.a5aa10f6.chunk.js"
+    "revision": "f05ba4bbb52671011034",
+    "url": "/React_Astronaut/static/js/main.f05ba4bb.chunk.js"
   },
   {
     "revision": "2d65a31bcbbffdb8b9ba",
     "url": "/React_Astronaut/static/js/1.2d65a31b.chunk.js"
   },
   {
-    "revision": "a5aa10f6d377506d70b7",
+    "revision": "f05ba4bbb52671011034",
     "url": "/React_Astronaut/static/css/main.e3525afa.chunk.css"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/React_Astronaut/static/css/1.db1c1304.chunk.css"
   },
   {
-    "revision": "61f3b3fbb6da869bf64ec349d8bb8b93",
+    "revision": "89f5c382113c2c38ddabd9c375f8466d",
     "url": "/React_Astronaut/index.html"
   }
 ];

@@ -112,6 +112,7 @@
 }
 .documentation-article .documentation-expansionPanel {
   width: 85vw;
+  cursor: pointer;
   margin: 0.625rem 0;
   border: 0.0625rem solid #495057;
 }

@@ -96,6 +96,7 @@ class App extends React.Component {
                 let displayNews = <News key={index} icons={element.icon} title={element.title} content={element.content}
                                         webpage={element.webpage}/>;
                 news.push(displayNews);
+                return displayNews;
             });
         }
 
@@ -103,6 +104,7 @@ class App extends React.Component {
             Object.values(this.state.goodPractices).map((element, index) => {
                 let displayGoodPractices = <GoodPractices key={index} title={element.title} content={element.content} code={element.code}/>;
                 goodPractices.push(displayGoodPractices);
+                return displayGoodPractices;
             });
         }
 
@@ -110,6 +112,7 @@ class App extends React.Component {
             Object.values(this.state.documentation).map((element, index) => {
                 let displayDocumentation = <Documentation key={index} title={element.title} content={element.content} code={element.code}/>;
                 documentation.push(displayDocumentation);
+                return displayDocumentation;
             });
         }
 
@@ -152,7 +155,7 @@ class App extends React.Component {
 
                 <ScrollableAnchor id={'section2'}>
                     <section className='goodPractices-container'>
-                        <h1>Dobre Reactowe praktyki</h1>
+                        <h1>Dobre praktyki</h1>
                         <article>
                             {uniqueGoodPractices}
                         </article>

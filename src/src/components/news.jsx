@@ -2,7 +2,6 @@ import React from 'react';
 import Tilt from 'react-tilt';
 import Fade from 'react-reveal/Fade';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
-import GoodPractices from "../js/App";
 
 class NewsContainer extends React.Component {
     constructor(props) {
@@ -27,12 +26,11 @@ class NewsContainer extends React.Component {
         return (
             <>
                 <Fade>
-                    <Tilt className="Tilt" options={{max: 25}}>
+                    <Tilt className="tilt-news" options={{max: 25}}>
                         <article className="news-article" onClick={this.toggle}>
                             <div>
                                 <img src={this.props.icons} alt={this.state.title}/>
                                 <h4>{this.props.title}</h4>
-                                <p>{this.props.content}</p>
                             </div>
                             <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                                 <ModalHeader toggle={this.toggle}>{this.state.title}</ModalHeader>

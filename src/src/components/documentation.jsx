@@ -23,7 +23,7 @@ class Documentation extends React.Component {
         return (
             <article className="documentation-article">
                 <Zoom top>
-                    <Tilt className="Tilt" options={{max: 2, scale: 1.05}}>
+                    <Tilt className="tilt-documentation" options={{max: 2, scale: 1.05}}>
                         <ExpansionPanel className='documentation-expansionPanel'>
                             <ExpansionPanelSummary>
                                 <Typography><strong className="documentation-title">{this.state.title}</strong></Typography>

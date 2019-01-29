@@ -1,6 +1,18 @@
 @import "../modules/colors";
 @import "../modules/variables";
 
+.tilt-news {
+  :hover {
+    filter: drop-shadow(0 0 1.875rem $layoutPrimaryColor);
+    background-color: $hoverColor;
+    border: 1px solid $layoutSecondaryColor;
+  }
+
+  &:hover h4 {
+    color: $layoutSecondaryColor;
+  }
+}
+
 .news-article {
   background-color: $layoutSecondaryColor;
   display: flex;
@@ -13,27 +25,30 @@
   height: 100%;
   margin: 0.625rem 1rem;
   border-radius: 0.3125rem;
+  cursor: pointer;
   border: 1px solid $sectionPrimaryColor;
+
+  :hover {
+    filter: none;
+    background-color: transparent;
+    border: none;
+  }
+
   img {
     width: 4rem;
     height: 4rem;
   }
+
   h4 {
     color: $sectionPrimaryColor;
     font-size: 1rem;
     margin-top: 0.625rem;
   }
-  p {
-    margin-top: 0.625rem;
-    max-width: 13.75rem;
-    max-height: 18.75rem;
-    display: none;
-    color: $layoutSecondaryColor;
-  }
 }
 
 .news-links {
   color: $layoutSecondaryColor;
+
   &:hover {
     color: $layoutSecondaryColor;
     text-decoration: none;

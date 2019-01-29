@@ -115,6 +115,9 @@
   margin: 0.625rem 0;
   border: 0.0625rem solid #495057;
 }
+.documentation-article .documentation-expansionPanel :hover {
+  filter: none;
+}
 @media only screen and (min-width: 768px) {
   .documentation-article .documentation-expansionPanel {
     padding: 0.625rem 0;
@@ -642,6 +645,15 @@ figure .logo {
   }
 }
 
+.tilt-news :hover {
+  filter: drop-shadow(0 0 1.875rem #00D8FF);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #F7F7F7;
+}
+.tilt-news:hover h4 {
+  color: #F7F7F7;
+}
+
 .news-article {
   background-color: #F7F7F7;
   display: flex;
@@ -654,7 +666,13 @@ figure .logo {
   height: 100%;
   margin: 0.625rem 1rem;
   border-radius: 0.3125rem;
+  cursor: pointer;
   border: 1px solid #1D1F21;
+}
+.news-article :hover {
+  filter: none;
+  background-color: transparent;
+  border: none;
 }
 .news-article img {
   width: 4rem;
@@ -664,13 +682,6 @@ figure .logo {
   color: #1D1F21;
   font-size: 1rem;
   margin-top: 0.625rem;
-}
-.news-article p {
-  margin-top: 0.625rem;
-  max-width: 13.75rem;
-  max-height: 18.75rem;
-  display: none;
-  color: #F7F7F7;
 }
 
 .news-links {
